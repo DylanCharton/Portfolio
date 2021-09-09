@@ -4186,7 +4186,7 @@ textarea.form-control-lg {
 
 .navbar-collapse {
   flex-basis: 100%;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   align-items: center;
 }
 
@@ -11593,7 +11593,8 @@ body {
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  background: rgb(42,62,112);
+  background: linear-gradient(0deg, rgba(42,62,112,1) 0%, rgba(17,25,45,1) 96%);
 }
 .about-section p {
   margin-bottom: 5rem;
@@ -11684,4 +11685,16 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+
+.polygon {
+  position : absolute;
+  height : 100vh;
+  width: 70vw;
+  background-color: #f9f28a;
+  z-index: 0;
+}
+
+div {
+  border : red solid 1px;
 }
