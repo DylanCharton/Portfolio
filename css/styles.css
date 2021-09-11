@@ -11529,25 +11529,28 @@ body {
   }
   #mainNav.navbar-shrink {
     background-color: #fefdec;
+    
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #11192D;
+    transform:none;
   }
   #mainNav.navbar-shrink .nav-link {
     color: #11192D;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
+    transform:none;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #fff56c;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #fff56c;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #fff56c;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #fff56c;
   }
 }
 
@@ -11580,7 +11583,6 @@ body {
   line-height: 2.5rem;
   /* letter-spacing: 0.8rem; */
   color : #fefdec;
-  cursor:default;
 }
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
@@ -11612,9 +11614,7 @@ body {
   padding-top: 10rem;
   background-color: #11192d
 }
-.about-section p {
-  margin-bottom: 5rem;
-}
+
 
 .projects-section {
   padding: 10rem 0;
@@ -11719,13 +11719,25 @@ body {
   top: 15vw;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.322));
 }
+.letter{
+  transition:1s;
+}
 .letter:hover{
   color: #f9f28a;
-  transition: 0.2s;
+  transition: 0.4s;
   cursor:default;
 }
 .letter:first-of-type, .letter:nth-of-type(6){
   color:#f9f28a;
+}
+#skills{
+  background-color: #11192d;
+}
+.skill-title{
+  color: #fefdec;
+  font-family:'josefin_sansthin';
+  font-weight: 1000;
+  font-size: 3rem;
 }
 
 div {
@@ -11742,16 +11754,24 @@ hr{
 h2{
   color : #fefdec;
   font-family: "bellotaregular";
+  padding-top : 5rem;
 }
 
-@font-face {
-  font-family: 'alumni_sansthin';
-  src: url('../fonts/alumnisans-variablefont_wght-webfont.woff2') format('woff2'),
-       url('../fonts/alumnisans-variablefont_wght-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+#about-title{
+  font-family : 'josefin_sansthin';
+  font-size : 3rem;
+  font-weight: 1000;
+}
+
+#about-title ~ p {
+  font-family : 'bellotaregular';
+  font-size : 1rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.8rem;
+  text-align: end;
 
 }
+
 @font-face {
   font-family: 'josefin_sansthin';
   src: url('../fonts/josefinsans-variablefont_wght-webfont.woff2') format('woff2'),
