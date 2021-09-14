@@ -52,6 +52,9 @@
 html {
   scroll-padding-top: calc(4.5rem - 1px);
 }
+html.sr .load-hidden{
+  visibility : hidden;
+}
 
 body {
   letter-spacing: 0.0625em;
@@ -140,18 +143,24 @@ h2{
 .about-content{
   z-index: 12 ;
 }
-.about-content img {
+.about-img {
+  width:30vw;
   height:70vh;
   margin-top: 5rem;
-  filter:drop-shadow(2px 0px 5px rgba(0, 0, 0, 0.527))
+  filter:drop-shadow(2px 0px 5px rgba(0, 0, 0, 0.527));
+  background: linear-gradient(to bottom, #11192d7c, #11192d4d, #11192d41 100%), url("../assets/img/about.png");
+  background-size: cover; 
   
 }
 .soft-skills{
-  background-color: #f9f28a;
+  background-color: #6eb4d1;
   width:fit-content;
   border-radius: 50px;
-  padding: 0.5rem;
-  margin: 0.3rem;
+  padding: 0.6rem;
+  margin: 0.4rem;
+  font-size: 0.8rem;
+  font-family:'josefin_sansthin';
+  font-weight: 900
 }
 .skills-section{
   width: 100%;
@@ -166,8 +175,16 @@ h2{
   z-index:0;
 
 }
+.hobbies-icons{
+  width: 4.5rem;
+}
 
-
+.contact-section{
+  background-color: #11192d;
+}
+footer{
+  background-color: #11192d;
+}
 .projects-section {
   padding: 10rem 0;
   background-color: #11192d;
@@ -177,7 +194,7 @@ h2{
 }
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
+  background: linear-gradient(to bottom, #11192d, #11192d6e, #11192d 100%), url("../assets/img/bg-signup.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -199,7 +216,7 @@ h2{
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #f9f28a;
+  border-bottom: 0.25rem solid #6eb4d1;
 }
 .contact-section .card h4, .contact-section .card .h4 {
   font-size: 0.8rem;
@@ -208,9 +225,11 @@ h2{
   letter-spacing: 0.15rem;
 }
 .contact-section .card hr {
-  border-color: #f9f28a;
+  border-color: #6eb4d1;
+  color:#6eb4d1;
   border-width: 0.25rem;
   width: 3rem;
+  opacity: 1;
 }
 .contact-section .social {
   margin-top: 5rem;
@@ -282,7 +301,8 @@ h2{
 }
 #typewriter{
   height: 6rem;
-  background-color: #f9f28a;
+  background-color: #fefdec;
+  --bs-gutter-x: 0rem;
 }
 #typewriter a {
   text-decoration: none;
@@ -319,6 +339,15 @@ h2{
   color:#11192d;
 }
 .project-frame{
+  background-color: #fefdec;
+}
+.project-title{
+  color: #fefdec;
+  font-family:'josefin_sansthin';
+  font-weight: 1000;
+  font-size: 3rem;
+}
+.form-control{
   background-color: #fefdec;
 }
 .navbar-collapse{
@@ -411,6 +440,8 @@ h2{
 }
 
 
+
+
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
     font-size: 4rem;
@@ -448,8 +479,10 @@ h2{
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #287e78;
-    border-width: 0.25rem;
+    border-color: #6eb4d1;
+    color : #6eb4d1;
+    opacity:1;
+    border-width: 0.10rem;
     width: 30%;
     
   

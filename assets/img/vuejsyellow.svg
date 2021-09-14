@@ -21,8 +21,8 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="2.8761745"
-     inkscape:cx="130.90305"
-     inkscape:cy="85.704119"
+     inkscape:cx="130.90304"
+     inkscape:cy="85.704118"
      inkscape:window-width="1600"
      inkscape:window-height="837"
      inkscape:window-x="-8"
@@ -39,7 +39,7 @@
          d="m0 0-22.669-39.264-22.669 39.264h-75.491l98.16-170.02 98.16 170.02z"
          fill="#41b883"
          id="path2"
-         style="fill:#f9f28a;fill-opacity:1" />
+         style="fill:#fefdec;fill-opacity:1" />
     </g>
     <g
        transform="translate(178.06 235.01)"
@@ -48,7 +48,7 @@
          d="m0 0-22.669-39.264-22.669 39.264h-36.227l58.896-102.01 58.896 102.01z"
          fill="#34495e"
          id="path6"
-         style="fill:#fefdec;fill-opacity:1" />
+         style="fill:#f2f98a;fill-opacity:1" />
     </g>
   </g>
 </svg>
