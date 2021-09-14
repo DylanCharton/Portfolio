@@ -62,5 +62,23 @@ ScrollReveal().reveal('#about-title', {delay: 400});
 ScrollReveal().reveal('.about-first', {delay: 500});
 ScrollReveal().reveal('.about-second', {delay: 500});
 ScrollReveal().reveal('.about-img');
-ScrollReveal().reveal('.about-img');
+ScrollReveal().reveal('.skill-title', {delay: 100});
+ScrollReveal().reveal('.skill-sub', {delay: 100});
+ScrollReveal().reveal('.skills-div-one', {delay: 300});
+ScrollReveal().reveal('.skills-div-two', {delay: 400});
+ScrollReveal().reveal('.skills-div-three', {delay: 500});
+ScrollReveal().reveal('.soft-skills', {delay: 600});
+ScrollReveal().reveal('.planet', {delay: 200});
+ScrollReveal().reveal('.gamepad', {delay: 400});
+ScrollReveal().reveal('.book', {delay: 600});
+ScrollReveal().reveal('.fouet', {delay: 800});
+ScrollReveal().reveal('.project-title', {delay: 100});
+ScrollReveal().reveal('.project-img', {delay: 300});
+ScrollReveal().reveal('.project-text', {delay: 500});
+ScrollReveal().reveal('.contact-me', {delay: 200});
+ScrollReveal().reveal('.form-floating', {delay: 400});
+ScrollReveal().reveal('.submitButton', {delay: 400});
+
+
+
 
