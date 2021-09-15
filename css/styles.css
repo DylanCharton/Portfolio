@@ -48,7 +48,7 @@
 
 }
 
-/* NODES MODIFICATION */
+/* NODES & BOOTSTRAP MODIFICATION */
 html {
   scroll-padding-top: calc(4.5rem - 1px);
 }
@@ -71,16 +71,22 @@ h2{
   font-family: "bellotaregular";
   padding-top : 5rem;
 }
-
+.btn {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+/* Navigation */
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
   justify-content: flex-start;
 }
-
-
-
 #mainNav {
   min-height: 3.5rem;
   background-color: #fefdec;
@@ -109,17 +115,7 @@ h2{
   background-color: transparent;
 }
 
-
-.btn {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
-}
-
+/* BANNER */
 .masthead {
   position: relative;
   width: 100%;
@@ -145,6 +141,7 @@ h2{
   font-size: 1rem;
 }
 
+/* ABOUT  */
 .about-section {
   background-color: #fefdec;
   height:90vh;
@@ -161,6 +158,8 @@ h2{
   background-size: cover; 
   
 }
+
+/* SKILLS */
 .soft-skills{
   background-color: #6eb4d1;
   width:fit-content;
@@ -185,16 +184,21 @@ h2{
   z-index:0;
 
 }
+
+/* HOBBIES */
 .hobbies-icons{
   width: 4.5rem;
 }
 
+/* CONTACT */
 .contact-section{
   background-color: #11192d;
 }
 footer{
   background-color: #11192d;
 }
+
+/* PROJECTS */
 .projects-section {
   padding: 10rem 0;
   padding-bottom:5rem;
@@ -310,6 +314,7 @@ footer{
 .skills-div-one img, .skills-div-two img, .skills-div-three img{
   height: 4rem;
 }
+/* FINDMORE */
 .findmore-title{
   color:#fefdec;
   font-family: 'josefin_sansthin' ;
@@ -456,6 +461,39 @@ transform: translate(-50%, -50%);
   font-weight: 1000;
   font-size: 3rem;
 }
+.project-img{
+  position:relative;
+  z-index: 9;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #11192d;
+}
+.know-more{
+  color: #fefdec;
+  font-size: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+.project-img:hover .overlay{
+  opacity: 0.6;
+  cursor:pointer;
+}
 .form-control{
   background-color: #fefdec;
 }
@@ -470,6 +508,45 @@ transform: translate(-50%, -50%);
   background-color: #64a19d;
   border-color: #64a19d;
 }
+.btn-primary {
+  background-color: #fefdec;
+  color : #6eb4d1;
+  padding-left : 0.8rem;
+  padding-right : 0.8rem;
+  padding-top : 0.8rem;
+  padding-bottom : 0.8rem;
+  transition: 0.2s ease-in-out;
+}
+.btn-primary:hover{
+  background-color: #6eb4d1;
+
+}
+.btn-primary:active{
+  background-color: #11192d;
+}
+.btn-primary:focus{
+  background-color: #fefdec;
+  color:#6eb4d1;
+}
+
+.unroll{
+  position:relative;
+  background-color: #fefdec;
+  width: 100%;
+  height: 0;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.unrolled{
+  height: 20rem;
+  
+}
+.returnbutton{
+  cursor:pointer;
+  width: fit-content;
+}
+
+/* MEDIA QUERIES */
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
@@ -525,30 +602,38 @@ transform: translate(-50%, -50%);
     outline: none;
     border-bottom: 0.25rem solid #6eb4d1;
   }
+  .projects-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #f9f28a;
+    color : #fefdec;
+  }
+  .projects-section .project-text {
+    padding: 5rem;
+  }
+  .projects-section .project-text hr {
+    border-color: #6eb4d1;
+    color : #6eb4d1;
+    opacity:1;
+    border-width: 0.10rem;
+    width: 30%;
+  }
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h1, .masthead .h1 {
+    font-size: 3rem;
+    /* line-height: 6.5rem; */
+    letter-spacing: -0.5rem;
+  }
+  .masthead h2, .masthead .h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+  .container, .container-lg, .container-md, .container-sm {
+    max-width: 100%;
+  }
 }
-
-.btn-primary {
-  background-color: #fefdec;
-  color : #6eb4d1;
-  padding-left : 0.8rem;
-  padding-right : 0.8rem;
-  padding-top : 0.8rem;
-  padding-bottom : 0.8rem;
-  transition: 0.2s ease-in-out;
-}
-.btn-primary:hover{
-  background-color: #6eb4d1;
-
-}
-.btn-primary:active{
-  background-color: #11192d;
-}
-.btn-primary:focus{
-  background-color: #fefdec;
-  color:#6eb4d1;
-}
-
-
 
 @media screen and (max-width: 1170px){
   .polygon{
@@ -565,42 +650,5 @@ transform: translate(-50%, -50%);
   }
 }
 
-@media (min-width: 992px) {
-  .masthead {
-    height: 100vh;
-    padding: 0;
-  }
-  .masthead h1, .masthead .h1 {
-    font-size: 3rem;
-    /* line-height: 6.5rem; */
-    letter-spacing: -0.5rem;
-  }
-  .masthead h2, .masthead .h2 {
-    max-width: 30rem;
-    font-size: 1.25rem;
-  }
-}
 
-@media (min-width: 992px) {
-  .projects-section .featured-text {
-    padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #f9f28a;
-    color : #fefdec;
-  }
-  
-}
 
-@media (min-width: 992px) {
-  .projects-section .project-text {
-    padding: 5rem;
-  }
-  .projects-section .project-text hr {
-    border-color: #6eb4d1;
-    color : #6eb4d1;
-    opacity:1;
-    border-width: 0.10rem;
-    width: 30%;
-    
-  
-  }
-}

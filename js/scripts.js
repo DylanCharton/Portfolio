@@ -1,12 +1,3 @@
-/*!
-* Start Bootstrap - Grayscale v7.0.3 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -52,6 +43,52 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+// Projects details
+
+let cards = document.querySelectorAll(".project-img");
+let unfolded = document.querySelectorAll(".unroll");
+let foldCross = document.querySelectorAll(".know-more");
+
+
+
+
+cards[0].addEventListener("click", ()=>{
+    if(unfolded[0].classList.contains("unrolled")){
+        unfolded[0].classList.remove("unrolled");
+        foldCross[0].innerHTML = "+"
+    } else {
+        unfolded[0].classList.add("unrolled");
+        foldCross[0].innerHTML = "<i class=\"fas fa-times ms-3\"></i>"
+    }
+})
+cards[1].addEventListener("click", ()=>{
+    if(unfolded[1].classList.contains("unrolled")){
+        unfolded[1].classList.remove("unrolled");
+        foldCross[1].innerHTML = "+"
+    } else {
+        unfolded[1].classList.add("unrolled");
+        foldCross[1].innerHTML = "<i class=\"fas fa-times ms-3\"></i>"
+    }
+})
+cards[2].addEventListener("click", ()=>{
+    if(unfolded[2].classList.contains("unrolled")){
+        unfolded[2].classList.remove("unrolled");
+        foldCross[2].innerHTML = "+"
+    } else {
+        unfolded[2].classList.add("unrolled");
+        foldCross[2].innerHTML = "<i class=\"fas fa-times ms-3\"></i>"
+    }
+})
+cards[3].addEventListener("click", ()=>{
+    if(unfolded[3].classList.contains("unrolled")){
+        unfolded[3].classList.remove("unrolled");
+        foldCross[3].innerHTML = "+"
+    } else {
+        unfolded[3].classList.add("unrolled");
+        foldCross[3].innerHTML = "<i class=\"fas fa-times ms-3\"></i>"
+    }
+})
+
 
 // Scroll reveal
 const sr = ScrollReveal();
