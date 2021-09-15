@@ -72,6 +72,15 @@ h2{
   padding-top : 5rem;
 }
 
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+
 #mainNav {
   min-height: 3.5rem;
   background-color: #fefdec;
@@ -187,6 +196,7 @@ footer{
 }
 .projects-section {
   padding: 10rem 0;
+  padding-bottom:5rem;
   background-color: #11192d;
 }
 .projects-section .featured-text {
@@ -304,6 +314,8 @@ footer{
   font-family: 'josefin_sansthin' ;
   font-size: 3rem;
   font-weight: 700;
+  margin-top: 4rem;
+  padding-bottom: 6rem;
 }
 #find-more{
   background-color: #11192d;
@@ -368,6 +380,7 @@ transform: translate(-50%, -50%);
 }
 .findmore-elements{
   height: 300px;
+  margin-bottom: 10rem;
 }
 #github-findmore{
   background: #fefdec;
