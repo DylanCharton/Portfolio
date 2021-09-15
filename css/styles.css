@@ -169,7 +169,8 @@ h2{
   margin: 0.4rem;
   font-size: 0.8rem;
   font-family:'josefin_sansthin';
-  font-weight: 900
+  font-weight: 900;
+  color:#fefdec;
 }
 .skills-section{
   width: 100%;
@@ -319,7 +320,9 @@ footer{
 }
 #find-more{
   background-color: #11192d;
+  position:relative;
 }
+
 .contact-me{
   color: #fefdec;
   font-family:'josefin_sansthin';

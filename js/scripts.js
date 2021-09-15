@@ -54,30 +54,107 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 // Scroll reveal
-ScrollReveal().reveal('.letter');
-ScrollReveal().reveal('#my-photo', {delay: 1500});
-ScrollReveal().reveal('#what-i-am', {delay: 600});
-ScrollReveal().reveal('#seeking', {delay: 900});
-ScrollReveal().reveal('#about-title', {delay: 400});
-ScrollReveal().reveal('.about-first', {delay: 500});
-ScrollReveal().reveal('.about-second', {delay: 500});
-ScrollReveal().reveal('.about-img');
-ScrollReveal().reveal('.skill-title', {delay: 100});
-ScrollReveal().reveal('.skill-sub', {delay: 100});
-ScrollReveal().reveal('.skills-div-one', {delay: 300});
-ScrollReveal().reveal('.skills-div-two', {delay: 400});
-ScrollReveal().reveal('.skills-div-three', {delay: 500});
-ScrollReveal().reveal('.soft-skills', {delay: 600});
-ScrollReveal().reveal('.planet', {delay: 200});
-ScrollReveal().reveal('.gamepad', {delay: 400});
-ScrollReveal().reveal('.book', {delay: 600});
-ScrollReveal().reveal('.fouet', {delay: 800});
-ScrollReveal().reveal('.project-title', {delay: 100});
-ScrollReveal().reveal('.project-img', {delay: 300});
-ScrollReveal().reveal('.project-text', {delay: 500});
-ScrollReveal().reveal('.contact-me', {delay: 200});
-ScrollReveal().reveal('.form-floating', {delay: 400});
-ScrollReveal().reveal('.submitButton', {delay: 400});
+const sr = ScrollReveal();
+   
+sr.reveal(".navReveal", {
+    origin: "top",
+    duration: 2000,
+    distance: "100px",
+    delay: 600
+
+});
+sr.reveal(".appearLeft",{
+    origin:"left",
+    duration: 1000,
+    distance: "200px",
+    reset: true,
+    delay: 200
+    
+});
+sr.reveal(".appearLeftHeader",{
+    origin:"left",
+    duration: 1000,
+    distance: "300px",
+    reset: true,
+    delay: 400
+});
+sr.reveal(".appearRightMain",{
+    origin:"right",
+    duration: 1000,
+    distance: "100px",
+    reset: true,
+    delay: 200
+});
+sr.reveal(".appearRightText",{
+    origin:"right",
+    duration: 1000,
+    distance: "300px",
+    reset: true,
+    delay: 400
+});
+sr.reveal(".soberReveal", {
+    delay:100,
+    origin:"bottom",
+    distance: "15px",
+    reset: true
+});
+sr.reveal(".skills-div-one", {
+    duration: 1000,
+    delay:300,
+    origin:"left",
+    distance: "500px",
+    reset:true
+    
+});
+sr.reveal(".skills-div-two", {
+    duration: 1000,
+    delay:400,
+    origin:"left",
+    distance: "500px",
+    reset: true
+    
+});
+sr.reveal(".skills-div-three", {
+    duration: 1000,
+    delay:500,
+    origin:"left",
+    distance: "500px",
+    reset: true    
+});
+sr.reveal(".projectRevealLeft",{
+    origin: "left",
+    duration : 2000,
+    distance : "50px",
+    reset: true
+});
+sr.reveal(".projectRevealRight",{
+    origin: "right",
+    duration : 2000,
+    distance : "50px",
+    reset: true
+});
+sr.reveal(".projectTextLeft",{
+    origin: "left",
+    delay: 300,
+    duration : 2000,
+    distance : "50px",
+    reset: true
+});
+sr.reveal(".projectTextRight",{
+    origin: "right",
+    delay: 300,
+    duration : 2000,
+    distance : "50px",
+    reset: true
+});
+sr.reveal(".find-more-icons",{
+    origin: "top",
+    delay: 300,
+    duration : 1000,
+    distance : "100px",
+    reset: true
+});
+
 
 
 
