@@ -345,8 +345,83 @@ footer{
   text-align: end;
 
 }
-.bg-white{
+#linkedin{
+  height : 9rem;
+  width: 9rem;
+  border-radius: 50%;
   background-color: #fefdec;
+  position: relative;
+  transition: 0.5s;
+}
+#linkedin img{
+width:7.7rem;
+height: 7.7rem;
+position : absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+#linkedin:hover{
+  transform:rotateY(360deg);
+  transition: 0.8s;
+  background-color: #6eb4d1;
+}
+.findmore-elements{
+  height: 300px;
+}
+#github-findmore{
+  background: #fefdec;
+  border-radius: 50%;
+  height : 9rem;
+  width : 9rem;
+  position:relative;
+  transition: 0.5s;
+}
+#github-findmore:hover{
+  transform:rotateY(360deg);
+  transition: 0.8s;
+  background-color: #6eb4d1;
+}
+#github-findmore img{
+  height: 7rem;
+  width: 7rem;
+  position : absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#my-resume{
+  background: #fefdec;
+  border-radius: 50%;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
+  transition: 0.5s;
+}
+#my-resume:hover{
+  transform:rotateY(360deg);
+  background-color: #6eb4d1;
+  transition: 0.8s;
+}
+.cv-icon:hover{
+  color:#6eb4d1;
+  transition: 0.8s;
+}
+.cv-icon{
+  position : absolute;
+  top: 50%;
+  left: 50%;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #11192d;
+  font-size: 4.5rem;
+  color:#fefdec;
+  transition: 0.5s  
+}
+.bg-white{
+  background-color: #fefdec!important;
 }
 .projects-section .project-text {
   padding: 3rem;
