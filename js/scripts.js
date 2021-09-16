@@ -97,7 +97,8 @@ sr.reveal(".navReveal", {
     origin: "top",
     duration: 2000,
     distance: "100px",
-    delay: 600
+    delay: 600,
+    
 
 });
 sr.reveal(".appearLeft",{
@@ -105,7 +106,8 @@ sr.reveal(".appearLeft",{
     duration: 1000,
     distance: "200px",
     reset: true,
-    delay: 200
+    delay: 200,
+    mobile: false
     
 });
 sr.reveal(".appearLeftHeader",{
@@ -113,21 +115,24 @@ sr.reveal(".appearLeftHeader",{
     duration: 1000,
     distance: "300px",
     reset: true,
-    delay: 400
+    delay: 400,
+    mobile: false
 });
 sr.reveal(".appearRightMain",{
     origin:"right",
     duration: 1000,
     distance: "100px",
     reset: true,
-    delay: 200
+    delay: 200,
+    mobile: false
 });
 sr.reveal(".appearRightText",{
     origin:"right",
     duration: 1000,
     distance: "300px",
     reset: true,
-    delay: 400
+    delay: 400,
+    mobile: false
 });
 sr.reveal(".soberReveal", {
     delay:100,
@@ -140,7 +145,8 @@ sr.reveal(".skills-div-one", {
     delay:300,
     origin:"left",
     distance: "500px",
-    reset:true
+    reset:true,
+    mobile: false
     
 });
 sr.reveal(".skills-div-two", {
@@ -148,7 +154,8 @@ sr.reveal(".skills-div-two", {
     delay:400,
     origin:"left",
     distance: "500px",
-    reset: true
+    reset: true,
+    mobile: false
     
 });
 sr.reveal(".skills-div-three", {
@@ -156,30 +163,35 @@ sr.reveal(".skills-div-three", {
     delay:500,
     origin:"left",
     distance: "500px",
-    reset: true    
+    reset: true,
+    mobile: false
 });
 sr.reveal(".projectRevealLeft",{
     origin: "left",
     duration : 2000,
     distance : "50px",
+    mobile: false
     
 });
 sr.reveal(".projectRevealRight",{
     origin: "right",
     duration : 2000,
     distance : "50px",
+    mobile: false
     
 });
 sr.reveal(".projectTextLeft",{
     origin: "left",
     duration : 2000,
     distance : "50px",
+    mobile: false
     
 });
 sr.reveal(".projectTextRight",{
     origin: "right",
     duration : 2000,
     distance : "50px",
+    mobile: false
     
 });
 sr.reveal(".find-more-icons",{
@@ -187,7 +199,8 @@ sr.reveal(".find-more-icons",{
     delay: 300,
     duration : 1000,
     distance : "100px",
-    reset: true
+    reset: true,
+    
 });
 
 

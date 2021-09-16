@@ -54,6 +54,7 @@
 
 
 /* NODES & BOOTSTRAP MODIFICATION */
+
 html {
   scroll-padding-top: calc(4.5rem - 1px);
 }
@@ -64,10 +65,12 @@ html.sr .load-hidden {
 
 body {
   letter-spacing: 0.0625em;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
-div {
-  border: red solid 1px;
+body::-webkit-scrollbar {
+  display: none;
 }
 
 hr {
@@ -817,9 +820,9 @@ font-size: 1.0rem!important;
     height: 100vh;
   }
   .masthead h1{
-    letter-spacing: -0.7rem;
-    font-size: 4rem;
-    line-height: 4.3rem;
+    letter-spacing: -0.5rem;
+    font-size: 3rem;
+    line-height: 3.3rem;
   }
   .masthead h2{
     padding-top: 0;
@@ -836,10 +839,15 @@ font-size: 1.0rem!important;
   }
   .about-section{
     background-color: #11192D;
+    height:fit-content;
   }
   #my-photo{
     position:relative;
-    height: 19rem;
+    height: 13rem;
+    top: 5rem;
     
+  }
+  .load-hidden{
+    visibility: visible;
   }
 }
