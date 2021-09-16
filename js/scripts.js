@@ -162,27 +162,25 @@ sr.reveal(".projectRevealLeft",{
     origin: "left",
     duration : 2000,
     distance : "50px",
-    reset: true
+    
 });
 sr.reveal(".projectRevealRight",{
     origin: "right",
     duration : 2000,
     distance : "50px",
-    reset: true
+    
 });
 sr.reveal(".projectTextLeft",{
     origin: "left",
-    delay: 300,
     duration : 2000,
     distance : "50px",
-    reset: true
+    
 });
 sr.reveal(".projectTextRight",{
     origin: "right",
-    delay: 300,
     duration : 2000,
     distance : "50px",
-    reset: true
+    
 });
 sr.reveal(".find-more-icons",{
     origin: "top",
@@ -191,6 +189,7 @@ sr.reveal(".find-more-icons",{
     distance : "100px",
     reset: true
 });
+
 
 
 
