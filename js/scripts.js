@@ -124,7 +124,7 @@ sr.reveal(".appearRightMain",{
     distance: "100px",
     reset: true,
     delay: 200,
-    mobile: false
+    mobile: false,
 });
 sr.reveal(".appearRightText",{
     origin:"right",
