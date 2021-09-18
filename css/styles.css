@@ -806,7 +806,8 @@ font-size: 1.0rem!important;
     background-color: #11192D;
   }
   .unrolled{
-    height: 35rem;
+    height: fit-content;
+    padding-bottom: 2rem;
   }
   #mainNav .navbar-brand{
     color: #11192D;
@@ -847,4 +848,10 @@ font-size: 1.0rem!important;
     right: auto;
     
   }
+  .btn-outline-info {
+    display:block;
+    width: fit-content;
+    margin: auto;
+  }
+  
 }

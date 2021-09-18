@@ -50,7 +50,7 @@
         <div class="polygon d-flex align-items-center justify-content-center">
             <img src="assets/img/photo.png" alt="Photo" id="my-photo" class="appearRightMain load-hidden">
             <div class="text-start">
-                <h1 class="mx-auto my-0 text-uppercase appearLeft load-hidden">
+                <h1 class="mx-auto my-0 px-4 text-uppercase appearLeft load-hidden">
                     <span class="letter">D</span>
                     <span class="letter">Y</span>
                     <span class="letter">L</span>
@@ -65,10 +65,10 @@
                     <span class="letter">O</span>
                     <span class="letter">N</span>
                 </h1>
-                <h2 class="mx-auto mt-2 mb-5 appearRightText " id="what-i-am">Développeur Web et Web Mobile
+                <h2 class="mx-auto mt-2 mb-5 px-4 appearRightText " id="what-i-am">Développeur Web et Web Mobile
                     en formation à l'Access Code School de
                     Lons-le-Saunier</h2>
-                <p class="text-white-50 appearRightText l" id="seeking">En recherche d'un stage du 10/01/2022
+                <p class="text-white-50 px-4 appearRightText l" id="seeking">En recherche d'un stage du 10/01/2022
                     au 04/03/2022</p>
             </div>
         </div>
@@ -172,7 +172,7 @@
         <img data-src="assets/img/fouet.svg" src="assets/img/loader.png" alt="Fouet" class="img-fluid hobbies-icons fouet soberReveal lazyload">
     </div>
     <!-- Projects-->
-    <section class="projects-section px-5" id="projects">
+    <section class="projects-section px-lg-5 px-0" id="projects">
         <div class="project-title mb-5 text-center soberReveal">Mes projets</div>
         <div class="container px-4 px-lg-5">
             <!-- Project One -->
