@@ -1,6 +1,7 @@
 /* FONTS */
 @font-face {
   font-family: 'josefin_sansthin';
+  font-display: swap;
   src: url('../fonts/josefinsans-variablefont_wght-webfont.woff2') format('woff2'),
     url('../fonts/josefinsans-variablefont_wght-webfont.woff') format('woff');
   font-weight: normal;
@@ -10,6 +11,7 @@
 
 @font-face {
   font-family: 'bellotaregular';
+  font-display: swap;
   src: url('../fonts/bellota-regular-webfont.woff2') format('woff2'),
     url('../fonts/bellota-regular-webfont.woff') format('woff');
   font-weight: normal;
@@ -19,6 +21,7 @@
 
 @font-face {
   font-family: 'bellotabold';
+  font-display: swap;
   src: url('../fonts/bellota-bold-webfont.woff2') format('woff2'),
     url('../fonts/bellota-regular-webfont.woff') format('woff');
   font-weight: normal;
@@ -28,23 +31,16 @@
 
 @font-face {
   font-family: 'bowlby_oneregular';
+  font-display: swap;
   src: url('../fonts/bowlbyone-regular-webfont.woff2') format('woff2'),
     url('../fonts/bowlbyone-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
 }
-
-@font-face {
-  font-family: 'averageregular';
-  src: url('../fonts/average-regular-webfont.woff2') format('woff2'),
-    url('../fonts/average-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
 @font-face {
   font-family: 'oswaldregular';
+  font-display: swap;
   src: url('../fonts/oswald-variablefont_wght-webfont.woff2') format('woff2'),
        url('../fonts/oswald-variablefont_wght-webfont.woff') format('woff');
   font-weight: normal;
@@ -59,14 +55,11 @@ html {
   scroll-padding-top: calc(4.5rem - 1px);
 }
 
-html.sr .load-hidden {
-  visibility: hidden;
-}
-
 body {
   letter-spacing: 0.0625em;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -315,8 +308,8 @@ footer {
 #my-photo {
   height: 30vw;
   position: absolute;
-  right: 9vw;
-  top: 15vw;
+  right: -14vw;
+  top: 13rem;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.322));
 }
 
@@ -640,6 +633,12 @@ font-size: 1.0rem!important;
   background-color: #e1ad01;
 }
 
+.btn-info {
+  background-color : #e1ad01;
+  border : solid 1px #e1ad01;
+  color: #fefdec;
+}
+
 .inline-link {
   display: inline-block;
   position: relative;
@@ -672,6 +671,9 @@ font-size: 1.0rem!important;
   color: #e1ad01;
 }
 
+.fa-times{
+  height: 120px;
+}
 
 /* MEDIA QUERIES */
 @media (min-width: 992px) {
@@ -789,10 +791,6 @@ font-size: 1.0rem!important;
   .polygon {
     width: calc(75vw + 25px);
   }
-
-  #my-photo {
-    right: calc(9vw - 25px);
-  }
 }
 
 @media (min-width: 768px) {
@@ -832,7 +830,7 @@ font-size: 1.0rem!important;
   }
   .polygon{
     width: 100%;
-    align-items: end!important;
+    flex-direction: column;
   }
   #polygon-two{
     display : none;
@@ -843,11 +841,10 @@ font-size: 1.0rem!important;
   }
   #my-photo{
     position:relative;
-    height: 13rem;
-    top: 5rem;
+    height: calc(13rem + 1vh);
+    top: 0rem;
+    margin-top : 3rem;
+    right: auto;
     
-  }
-  .load-hidden{
-    visibility: visible;
   }
 }
