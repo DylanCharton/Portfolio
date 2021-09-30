@@ -88,6 +88,24 @@ cards[3].addEventListener("click", ()=>{
         foldCross[3].innerHTML = "<i class=\"fas fa-times ms-3\"></i>"
     }
 })
+cards[4].addEventListener("click", ()=>{
+    if(unfolded[4].classList.contains("unrolled")){
+        unfolded[4].classList.remove("unrolled");
+        foldCross[4].innerHTML = "+"
+    } else {
+        unfolded[4].classList.add("unrolled");
+        foldCross[4].innerHTML = "<i class=\"fas fa-times ms-3\"></i>"
+    }
+})
+cards[5].addEventListener("click", ()=>{
+    if(unfolded[5].classList.contains("unrolled")){
+        unfolded[5].classList.remove("unrolled");
+        foldCross[5].innerHTML = "+"
+    } else {
+        unfolded[5].classList.add("unrolled");
+        foldCross[5].innerHTML = "<i class=\"fas fa-times ms-3\"></i>"
+    }
+})
 
 
 // Scroll reveal
@@ -105,47 +123,52 @@ sr.reveal(".appearLeft",{
     origin:"left",
     duration: 1000,
     distance: "200px",
-    reset: true,
     delay: 200,
     mobile: false
     
 });
-sr.reveal(".appearLeftHeader",{
-    origin:"left",
-    duration: 1000,
-    distance: "300px",
-    reset: true,
-    delay: 400,
-    mobile: false
-});
+
 sr.reveal(".appearRightMain",{
     origin:"right",
     duration: 1000,
     distance: "100px",
-    reset: true,
     delay: 200,
     mobile: false,
 });
-sr.reveal(".appearRightText",{
-    origin:"right",
-    duration: 1000,
-    distance: "300px",
-    reset: true,
-    delay: 400,
-    mobile: false
+
+sr.reveal(".appearLeftTitle", {
+    origin : "left",
+    duration : 1200,
+    distance : "200px",
+    delay: 300,
+    mobile : false,
+});
+sr.reveal(".appearLeftSkills", {
+    origin : "left",
+    duration : 800,
+    distance : "50px",
+    delay: 600,
+    mobile : false,
+});
+sr.reveal(".appearLeftText",{
+    origin:"left",
+    duration: 800,
+    distance: "200px",
+    delay: 300,
+    mobile: false,
 });
 sr.reveal(".soberReveal", {
     delay:100,
     origin:"bottom",
     distance: "15px",
-    reset: true
+    
 });
 sr.reveal(".skills-div-one", {
     duration: 1000,
     delay:300,
     origin:"left",
-    distance: "500px",
-    reset:true,
+    distance: "100px",
+    
     mobile: false
     
 });
@@ -153,8 +176,7 @@ sr.reveal(".skills-div-two", {
     duration: 1000,
     delay:400,
     origin:"left",
-    distance: "500px",
-    reset: true,
+    distance: "100px",
     mobile: false
     
 });
@@ -162,8 +184,7 @@ sr.reveal(".skills-div-three", {
     duration: 1000,
     delay:500,
     origin:"left",
-    distance: "500px",
-    reset: true,
+    distance: "100px",
     mobile: false
 });
 sr.reveal(".projectRevealLeft",{
@@ -194,15 +215,19 @@ sr.reveal(".projectTextRight",{
     mobile: false
     
 });
-sr.reveal(".find-more-icons",{
-    origin: "top",
-    delay: 300,
-    duration : 1000,
-    distance : "100px",
-    reset: true,
-    
-});
 
+// recaptcha script to prevent submission
+
+function validateRecaptcha() {
+    var response = grecaptcha.getResponse();
+    if (response.length === 0) {
+        alert("Veuillez valider le captcha.");
+        return false;
+    } else {
+        
+        return true;
+    }
+}
 
 
 

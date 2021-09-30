@@ -189,6 +189,7 @@ h2 {
 .skills-section {
   width: 100%;
   display: flex;
+  background-color: #11192d;
 }
 
 #polygon-two {
@@ -226,7 +227,7 @@ footer {
   padding: 2rem;
 }
 
-.signup-section {
+.contact-section {
   padding-top: 6rem;
   background: linear-gradient(to bottom, #11192d, #11192d6e, #11192d 100%), url("../assets/img/bg-signup.jpg");
   background-position: center;
@@ -235,7 +236,7 @@ footer {
   background-size: cover;
 }
 
-.signup-section .form-signup input {
+.contact-section .form-signup input {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
@@ -328,7 +329,7 @@ footer {
   color: #f9f28a;
 }
 
-#skills {
+#competences {
   background-color: #11192d;
 }
 
@@ -561,6 +562,11 @@ font-size: 1.0rem!important;
   background-color: #fefdec;
 }
 
+.g-recaptcha{
+  width : 50%;
+  margin: auto;
+}
+
 .navbar-collapse {
   flex-grow: 0;
 }
@@ -637,6 +643,25 @@ font-size: 1.0rem!important;
   background-color : #e1ad01;
   border : solid 1px #e1ad01;
   color: #fefdec;
+}
+.btn-info:active {
+  background-color : #e1ad01;
+  border : solid 1px #e1ad01;
+  color: #fefdec;
+}
+.btn-info:focus {
+  background-color : #e1ad01;
+  border : solid 1px #e1ad01;
+  color: #fefdec;
+}
+.btn-check:focus+.btn-info, .btn-info:focus{
+  box-shadow: 0 0 0 0.25rem rgb(237 255 0 / 43%);
+}
+
+.btn-info:hover{
+  background-color : #fefdec;
+  border-color: #fefdec;
+  color: #e1ad01;
 }
 
 .inline-link {

@@ -8,6 +8,8 @@
         content="Venez observer mes projets sur mon Portfolio. J'aspire à devenir développeur Full-Stack, alors n'hésitez pas à me contacter si mon profil vous intéresse." />
     <meta name="author" content="Dylan Charton" />
     <title>Dylan Charton - Portfolio</title>
+    <!-- Recaptcha script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,12 +20,12 @@
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
-<body id="page-top">
+<body id="accueil">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top navReveal" id="mainNav">
         <div class="container px-4 px-lg-5">
             <div class="col-2">
-                <a class="navbar-brand" href="#page-top">Dylan Charton</a>
+                <a class="navbar-brand" href="#accueil">Dylan Charton</a>
             </div>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -33,10 +35,10 @@
             </button>
             <div class="collapse navbar-collapse col-9" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#signup">Contactez-moi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contactez-moi</a></li>
                     <li class="nav-item"><a class="nav-link" href="assets/cv_dylancharton.pdf" target="_blank"
                             rel="noopener">CV</a></li>
                 </ul>
@@ -65,10 +67,10 @@
                     <span class="letter">O</span>
                     <span class="letter">N</span>
                 </h1>
-                <h2 class="mx-auto mt-2 mb-5 px-4 appearRightText " id="what-i-am">Développeur Web et Web Mobile
+                <h2 class="mx-auto mt-2 mb-5 px-4 appearLeftText " id="what-i-am">Développeur Web et Web Mobile
                     en formation à l'Access Code School de
                     Lons-le-Saunier</h2>
-                <p class="text-white-50 px-4 appearRightText l" id="seeking">En recherche d'un stage du 10/01/2022
+                <p class="text-white-50 px-4 appearLeftText l" id="seeking">En recherche d'un stage du 10/01/2022
                     au 04/03/2022</p>
             </div>
         </div>
@@ -76,7 +78,7 @@
 
     </header>
     <!-- About-->
-    <section class="about-section" id="about">
+    <section class="about-section" id="apropos">
         <div id="polygon-two"></div>
         <div class="container-fluid px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 align-items-end">
@@ -85,14 +87,14 @@
                 </div>
                 <div class="col-12 col-lg-8 about-content">
 
-                    <h2 class="text-white mb-5 text-end appearRightMain" id="about-title">Qui suis-je ?</h2>
-                    <p class="text-white appearRightText">
+                    <h2 class="text-white mb-5 text-end appearLeftTitle" id="about-title">Qui suis-je ?</h2>
+                    <p class="text-white appearLeftText">
                         Après quelques expériences en management de la grande distribution qui m'ont appris la rigueur,
                         l'organisation et le sens de la communication, j'ai entrepris un virage me menant vers les
                         métiers de l'informatique. Le jeu vidéo est le pilier de ce qui m'a fait m'intéresser par la
                         suite au développement des nouvelles technologies et à la culture d'Internet.
                     </p>
-                    <p class="text-white appearRightText">Aujourd'hui, en formation à l'Access Code School de
+                    <p class="text-white appearLeftText">Aujourd'hui, en formation à l'Access Code School de
                         Lons-le-Saunier,
                         j'entreprends de devenir développeur Full-Stack car j'aime énormément la polyvalence. Ma
                         curiosité me pousse chaque jour à m'améliorer, les projets suivants en sont les témoins les plus
@@ -103,51 +105,51 @@
 
         </div>
     </section>
-    <section class="skills-section justify-content-center" id="skills">
+    <section class="skills-section justify-content-center" id="competences">
         <div class="container-fluid px-4 px-lg-5 row d-flex">
             <h2 class="text-center skill-title soberReveal">Compétences</h2>
             <div class="col-12 col-lg-8">
                 <h4 class="skill-sub text-center soberReveal">Compétences techniques</h4>
                 <div class="row justify-content-center text-center skills-div-one py-5">
-                    <div class="col-3"><img data-src="assets/img/gityellow.svg" src="assets/img/loader.png" alt="Icône Git"
-                            class="img-fluid lazyload"></div>
-                    <div class="col-3"><img data-src="assets/img/githubyellow.svg" src="assets/img/loader.png" class="img-fluid lazyload"
-                            alt="Icône Github">
+                    <div class="col-3"><img data-src="assets/img/gityellow.svg" src="assets/img/loader.png"
+                            alt="Icône Git" class="img-fluid lazyload"></div>
+                    <div class="col-3"><img data-src="assets/img/githubyellow.svg" src="assets/img/loader.png"
+                            class="img-fluid lazyload" alt="Icône Github">
                     </div>
-                    <div class="col-3"><img data-src="assets/img/wordpressyellow.svg" src="assets/img/loader.png" alt="Icône Wordpress"
-                            class="img-fluid lazyload"></div>
-                    <div class="col-3"><img data-src="assets/img/visualstudiocode.svg" src="assets/img/loader.png" alt="Icône Visual Studio Code"
-                            class="img-fluid lazyload"></div>
+                    <div class="col-3"><img data-src="assets/img/wordpressyellow.svg" src="assets/img/loader.png"
+                            alt="Icône Wordpress" class="img-fluid lazyload"></div>
+                    <div class="col-3"><img data-src="assets/img/visualstudiocode.svg" src="assets/img/loader.png"
+                            alt="Icône Visual Studio Code" class="img-fluid lazyload"></div>
 
                 </div>
                 <div class="row justify-content-center text-center skills-div-two py-5">
-                    <div class="col-3"><img data-src="assets/img/phpyellow.svg" src="assets/img/loader.png" alt="Icône PHP"
-                            class="img-fluid lazyload"></div>
-                    <div class="col-3"><img data-src="assets/img/Laravelyellow.svg" src="assets/img/loader.png" class="img-fluid lazyload"
-                            alt="Icône Laravel">
+                    <div class="col-3"><img data-src="assets/img/phpyellow.svg" src="assets/img/loader.png"
+                            alt="Icône PHP" class="img-fluid lazyload"></div>
+                    <div class="col-3"><img data-src="assets/img/Laravelyellow.svg" src="assets/img/loader.png"
+                            class="img-fluid lazyload" alt="Icône Laravel">
                     </div>
-                    <div class="col-3"><img data-src="assets/img/mysqlyellowblue.svg" src="assets/img/loader.png" alt="Icône MySQL"
-                            class="img-fluid lazyload">
+                    <div class="col-3"><img data-src="assets/img/mysqlyellowblue.svg" src="assets/img/loader.png"
+                            alt="Icône MySQL" class="img-fluid lazyload">
                     </div>
                 </div>
                 <div class="row justify-content-center text-center skills-div-three py-5">
-                    <div class="col-2"><img data-src="assets/img/jsyellow.svg" src="assets/img/loader.png" alt="Icône JavaScript"
-                            class="img-fluid lazyload">
+                    <div class="col-2"><img data-src="assets/img/jsyellow.svg" src="assets/img/loader.png"
+                            alt="Icône JavaScript" class="img-fluid lazyload">
                     </div>
-                    <div class="col-2"><img data-src="assets/img/vuejsyellow.svg" src="assets/img/loader.png" class="img-fluid lazyload"
-                            alt="Icône VueJS"></div>
-                    <div class="col-2"><img data-src="assets/img/bootstrapyellow.svg" src="assets/img/loader.png" alt="Icône Bootstrap"
-                            class="img-fluid lazyload"></div>
-                    <div class="col-2"><img data-src="assets/img/cssyellow.svg" src="assets/img/loader.png" alt="Icône CSS"
-                            class="img-fluid lazyload"></div>
-                    <div class="col-2"><img data-src="assets/img/htmlyellow.svg" src="assets/img/loader.png" alt="Icône HTML"
-                            class="img-fluid lazyload"></div>
+                    <div class="col-2"><img data-src="assets/img/vuejsyellow.svg" src="assets/img/loader.png"
+                            class="img-fluid lazyload" alt="Icône VueJS"></div>
+                    <div class="col-2"><img data-src="assets/img/bootstrapyellow.svg" src="assets/img/loader.png"
+                            alt="Icône Bootstrap" class="img-fluid lazyload"></div>
+                    <div class="col-2"><img data-src="assets/img/cssyellow.svg" src="assets/img/loader.png"
+                            alt="Icône CSS" class="img-fluid lazyload"></div>
+                    <div class="col-2"><img data-src="assets/img/htmlyellow.svg" src="assets/img/loader.png"
+                            alt="Icône HTML" class="img-fluid lazyload"></div>
                 </div>
 
             </div>
             <div class="col-lg-4 col-12">
                 <h4 class="skill-sub text-center soberReveal">Soft-skills</h4>
-                <div class="row justify-content-center appearRightMain">
+                <div class="row justify-content-center appearLeftSkills">
                     <div class="soft-skills">Curiosité</div>
                     <div class="soft-skills">Organisation</div>
                     <div class="soft-skills">Persévérance</div>
@@ -156,7 +158,7 @@
                     <div class="soft-skills">Management d'équipe</div>
                 </div>
                 <h4 class="skill-sub text-center py-4 soberReveal">Langues</h4>
-                <div class="row justify-content-center appearRightMain">
+                <div class="row justify-content-center appearLeftSkills">
                     <div class="soft-skills">Français - Natif</div>
                     <div class="soft-skills">Anglais - Bilingue</div>
                 </div>
@@ -165,21 +167,24 @@
 
     </section>
     <div id="typewriter" class="row text-center justify-content-evenly align-items-center">
-        <img data-src="assets/img/planet.svg" src="assets/img/loader.png" alt="Planète" class="img-fluid hobbies-icons planet soberReveal lazyload">
+        <img data-src="assets/img/planet.svg" src="assets/img/loader.png" alt="Planète"
+            class="img-fluid hobbies-icons planet soberReveal lazyload">
         <img data-src="assets/img/game-controller.svg" src="assets/img/loader.png" alt="Manette"
             class="img-fluid hobbies-icons gamepad soberReveal lazyload">
-        <img data-src="assets/img/book.svg" src="assets/img/loader.png" alt="Livre" class="img-fluid hobbies-icons book soberReveal lazyload">
-        <img data-src="assets/img/fouet.svg" src="assets/img/loader.png" alt="Fouet" class="img-fluid hobbies-icons fouet soberReveal lazyload">
+        <img data-src="assets/img/book.svg" src="assets/img/loader.png" alt="Livre"
+            class="img-fluid hobbies-icons book soberReveal lazyload">
+        <img data-src="assets/img/fouet.svg" src="assets/img/loader.png" alt="Fouet"
+            class="img-fluid hobbies-icons fouet soberReveal lazyload">
     </div>
     <!-- Projects-->
-    <section class="projects-section px-lg-5 px-0" id="projects">
+    <section class="projects-section px-lg-5 px-0" id="projets">
         <div class="project-title mb-5 text-center soberReveal">Mes projets</div>
         <div class="container px-4 px-lg-5">
             <!-- Project One -->
             <div class="row gx-0 mb-lg-0 justify-content-center">
                 <div class="col-lg-6 bg-white project-img">
-                    <img class="img-fluid shadow  projectRevealLeft lazyload" data-src="assets/img/mntn-mockup.png" src="assets/img/loader.png"
-                        alt="MNTN Mockup" />
+                    <img class="img-fluid shadow  projectRevealLeft lazyload" data-src="assets/img/mntn-mockup.png"
+                        src="assets/img/loader.png" alt="MNTN Mockup" />
                     <div class="overlay">
                         <div class="know-more">+</div>
                     </div>
@@ -201,8 +206,8 @@
 
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6 mockup">
-                        <img data-src="assets/img/techsini-mntn.png" src="assets/img/loader.png" class="img-fluid project-mockup-size lazyload"
-                            alt="Mockup MNTN">
+                        <img data-src="assets/img/techsini-mntn.png" src="assets/img/loader.png"
+                            class="img-fluid project-mockup-size lazyload" alt="Mockup MNTN">
                     </div>
                     <div class="col-12 col-lg-6 project-description">
                         <p class="py-3 px-4">Le principe de ce projet était de reproduire <a
@@ -221,19 +226,65 @@
                 </div>
             </div>
             <!-- Project Two -->
-            <div class="row gx-0 justify-content-center">
+            <div class="row gx-0 mb-lg-0 justify-content-center">
                 <div class="col-lg-6 bg-white project-img">
-                    <img class="img-fluid shadow projectRevealRight lazyload"
-                        data-src="assets/img/tourdepize-mockup.png" src="assets/img/loader.png" alt="La Tour de Pize Mockup" />
+                    <img class="img-fluid shadow projectRevealLeft lazyload"
+                        data-src="assets/img/mockup-tourdepize-figma.png" src="assets/img/loader.png"
+                        alt="Le crédit Lédonien Mockup" />
                     <div class="overlay">
                         <div class="know-more">+</div>
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project-frame">
+                        <div class="d-flex h-100 project-frame">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="projectTextRight project-caption-t">La Tour de Pize (Maquette)</h4>
+                                <p class="mb-0 projectTextRight project-caption-sub">Un projet réalisé en cours de
+                                    formation.</p>
+                                <hr class="d-none d-lg-block mb-0 ms-0 projectTextRight" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="unroll">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 mockup">
+                        <img data-src="assets/img/techsini-tourdepize.png" src="assets/img/loader.png"
+                            class="img-fluid project-mockup-size lazyload" alt="Mockup La Tour de Pize">
+                    </div>
+                    <div class="col-12 col-lg-6 project-description">
+                        <p class="py-3 px-4">Il s'agit de la première maquette que j'ai réalisé lors de ma formation.
+                            Elle m'a permis de découvrir Figma et ses fonctionnalités de façon plus approfondie que lors
+                            du projet précédent. Il s'agissait ici de proposer une solution pour refaire <a
+                                href="https://www.latourdepize.com/" target="_blank" class="inline-link"
+                                rel="noopener">ce site</a> en y intégrant directement une solution de consultation de la
+                            carte et de commande. </p>
+
+                        <a href="https://www.figma.com/proto/MdQsIVvL7dlIf1TbsWdibr/La-Tour-de-Pize-Dylan-Charton?node-id=3%3A2&starting-point-node-id=3%3A2"
+                            class="btn btn-outline-info" target="_blank" rel="noopener">Prototype Mobile</a>
+                        <a href="https://www.figma.com/proto/MdQsIVvL7dlIf1TbsWdibr/La-Tour-de-Pize-Dylan-Charton?node-id=93%3A893&starting-point-node-id=93%3A893"
+                            class="btn btn-outline-info" target="_blank" rel="noopener">Prototype PC</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Three -->
+            <div class="row gx-0 justify-content-center">
+                <div class="col-lg-6 bg-white project-img">
+                    <img class="img-fluid shadow projectRevealRight lazyload"
+                        data-src="assets/img/tourdepize-mockup.png" src="assets/img/loader.png"
+                        alt="La Tour de Pize Mockup" />
+                    <div class="overlay">
+                        <div class="know-more">+</div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100 project-frame">
                             <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="projectTextLeft project-caption-t">La Tour de Pize</h4>
+                                <h4 class="projectTextLeft project-caption-t">La Tour de Pize (Intégration)</h4>
                                 <p class="mb-0 projectTextLeft project-caption-sub">Un projet réalisé en cours de
                                     formation.</p>
                                 <hr class="d-none d-lg-block mb-0 me-0 projectTextLeft" />
@@ -263,16 +314,17 @@
 
                 </div>
             </div>
-            <!-- Project Three-->
+            <!-- Project Four-->
             <div class="row gx-0 mb-lg-0 justify-content-center">
                 <div class="col-lg-6 bg-white project-img">
                     <img class="img-fluid shadow projectRevealLeft lazyload"
-                        data-src="assets/img/credit-ledonien-mockup.png" src="assets/img/loader.png" alt="Le crédit Lédonien Mockup" />
+                        data-src="assets/img/credit-ledonien-mockup.png" src="assets/img/loader.png"
+                        alt="Le crédit Lédonien Mockup" />
                     <div class="overlay">
                         <div class="know-more">+</div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-lg-first">
                     <div class="bg-black text-center h-100 project-frame">
                         <div class="d-flex h-100 project-frame">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
@@ -288,8 +340,8 @@
             <div class="unroll">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6 mockup">
-                        <img data-src="assets/img/techsini-credit.png" src="assets/img/loader.png" class="img-fluid project-mockup-size lazyload"
-                            alt="Mockup Crédit Lédonien">
+                        <img data-src="assets/img/techsini-credit.png" src="assets/img/loader.png"
+                            class="img-fluid project-mockup-size lazyload" alt="Mockup Crédit Lédonien">
                     </div>
                     <div class="col-12 col-lg-6 project-description">
                         <p class="py-3 px-4">Ce projet a été réalisé avec Francis Pernot et Marley Sorhaindo. J'ai pu
@@ -306,16 +358,17 @@
                     </div>
                 </div>
             </div>
-            <!-- Project Four -->
+            <!-- Project Five -->
             <div class="row gx-0 justify-content-center">
                 <div class="col-lg-6 bg-white project-img">
                     <img class="img-fluid shadow projectRevealRight lazyload"
-                        data-src="assets/img/pierrefeuille-mockup.png" src="assets/img/loader.png" alt="Pierre feuille ciseaux Mockup" />
+                        data-src="assets/img/pierrefeuille-mockup.png" src="assets/img/loader.png"
+                        alt="Pierre feuille ciseaux Mockup" />
                     <div class="overlay">
                         <div class="know-more">+</div>
                     </div>
                 </div>
-                <div class="col-lg-6 order-lg-first">
+                <div class="col-lg-6">
                     <div class="bg-black text-center h-100 project-frame">
                         <div class="d-flex h-100 project-frame">
                             <div class="project-text w-100 my-auto text-center text-lg-right">
@@ -332,8 +385,8 @@
             <div class="unroll">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6 mockup">
-                        <img data-src="assets/img/techsini-pfc.png" src="assets/img/loader.png" class="img-fluid project-mockup-size lazyload"
-                            alt="Mockup Pierre feuille ciseaux">
+                        <img data-src="assets/img/techsini-pfc.png" src="assets/img/loader.png"
+                            class="img-fluid project-mockup-size lazyload" alt="Mockup Pierre feuille ciseaux">
                     </div>
                     <div class="col-12 col-lg-6 project-description">
                         <p class="py-3 px-4">Ce projet était un projet très axé sur le JavaScript. J'ai créé un
@@ -353,21 +406,69 @@
 
                 </div>
             </div>
+            <div class="row gx-0 justify-content-center">
+                <div class="col-lg-6 bg-white project-img">
+                    <img class="img-fluid shadow projectRevealRight lazyload"
+                        data-src="assets/img/mockup-portfolio-main.png" src="assets/img/loader.png"
+                        alt="Pierre feuille ciseaux Mockup" />
+                    <div class="overlay">
+                        <div class="know-more">+</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project-frame">
+                        <div class="d-flex h-100 project-frame">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="projectTextLeft project-caption-t">Mon Portfolio</h4>
+                                <p class="mb-0 projectTextLeft project-caption-sub">Un projet réalisé en cours de
+                                    formation.</p>
+                                <hr class="d-none d-lg-block mb-0 me-0 projectTextLeft" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="unroll">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 mockup">
+                        <img data-src="assets/img/techsini-portfolio.png" src="assets/img/loader.png"
+                            class="img-fluid project-mockup-size lazyload" alt="Mockup Portfolio">
+                    </div>
+                    <div class="col-12 col-lg-6 project-description">
+                        <p class="py-3 px-4"> Ce projet consistait à la réalisation d'un portfolio qui comporterait tous
+                            les projets que j'ai réalisés à ce jour. Le principe était de chercher un template Bootstrap
+                            sur lequel m'appuyer mais aucun n'a su me convenir. J'ai donc pris un template relativement
+                            neutre que j'ai adapté en fonction de mes goûts grâce à Bootstrap. <br />Pour mes mockups
+                            j'ai utilisé les sites <a href="https://techsini.com/multi-mockup/index.php" target="_blank"
+                                class="inline-link" rel="noopener">Techsini</a>, <a href="https://placeit.net/"
+                                target="_blank" class="inline-link" rel="noopener">PlaceIt</a> ainsi qu'un peu du
+                            logiciel Photoshop de la suite Adobe.<br /> J'ai découvert des librairies JavaScript
+                            (LazyLoad et ScrollReveal notamment) qui me sont très utiles pour optimiser mon site. Il
+                            reste néanmoins perfectible et j'ai hâte de l'améliorer davantage grâce aux connaissances
+                            que j'acquérirai au fil de mon parcours. </p>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact-->
-    <section class="signup-section" id="signup">
+    <section class="contact-section" id="contact">
         <div class="text-center pb-5 contact-me">N'hésitez pas à me contacter !</div>
         <div class="container px-5 col-12 col-lg-6">
-            <form method="POST" action="form/action.php">
+            <form method="POST" action="form/action.php" onsubmit="return validateRecaptcha();"
+                class="d-flex flex-column justify-content-center">
                 <input type="text" name="nom" placeholder="Votre nom" class="form-control"
                     value="<?php if(isset($_POST['nom'])) { echo $_POST['nom']; } ?>" /><br /><br />
                 <input type="email" name="mail" placeholder="Votre email" class="form-control"
                     value="<?php if(isset($_POST['mail'])) { echo $_POST['mail']; } ?>" /><br /><br />
                 <textarea name="message" placeholder="Votre message" class="form-control"
                     style="height: 10rem;"><?php if(isset($_POST['message'])) { echo $_POST['message']; } ?></textarea><br /><br />
-                <input type="submit" value="Envoyer !" class="btn btn-info" name="mailform" />
+                <div class="g-recaptcha" data-sitekey="6Ldg9IccAAAAANuHgqtuMCHJD1FbregBFs0Vo5Hi"></div>
+                <br />
+                <input type="submit" value="Envoyer !" class="btn btn-info m-auto" name="mailform" />
             </form>
         </div>
     </section>
@@ -375,11 +476,14 @@
         <div class="container">
             <div class="row findmore-elements align-items-center justify-content-center d-flex">
                 <a href="https://www.linkedin.com/in/dylan-charton/" target="_blank" rel="noopener" id="linkedin"
-                    class="mx-3"><img data-src="assets/img/linkedin.svg" src="assets/img/loader.png" alt="Icône LinkedIn" class="lazyload"></a>
+                    class="mx-3"><img data-src="assets/img/linkedin.svg" src="assets/img/loader.png"
+                        alt="Icône LinkedIn" class="lazyload"></a>
                 <a href="https://github.com/DylanCharton" target="_blank" rel="noopener" id="github-findmore"
-                    class="mx-3"><img data-src="assets/img/githublink.svg" src="assets/img/loader.png" alt="Icône GitHub" class="lazyload"></a>
+                    class="mx-3"><img data-src="assets/img/githublink.svg" src="assets/img/loader.png"
+                        alt="Icône GitHub" class="lazyload"></a>
                 <a href="assets/cv_dylancharton.pdf" target="_blank" rel="noopener" id="my-resume" class="mx-3"><img
-                        data-src="assets/img/resume.svg" src="assets/img/loader.png" alt="Icône CV" class="lazyload"></a>
+                        data-src="assets/img/resume.svg" src="assets/img/loader.png" alt="Icône CV"
+                        class="lazyload"></a>
 
             </div>
         </div>

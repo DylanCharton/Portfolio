@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Dylan Charton - Résultat du formulaire</title>
+</head>
+<body>
+   <header>
+      <h3>Cette page est en travaux !</h3>
+      <p>Mais elle fonctionne</p>
+   </header>
+
+   
+</body>
+</html>
+
 <?php
 if(isset($_POST['mailform'])) {
    if(!empty($_POST['nom']) AND !empty($_POST['mail']) AND !empty($_POST['message'])) {
@@ -21,7 +40,7 @@ if(isset($_POST['mailform'])) {
       ';
       mail("d.charton@codeur.online", "Sujet du message", $message, $header);
       $msg="Votre message a bien été envoyé !";
-      header("Refresh:5; url=https://dylanc903.promo-93.codeur.online/portfolio/index.php#signup");
+      header("Refresh:5; url=https://dylanc903.promo-93.codeur.online/#contact");
    } else {
       $msg="Tous les champs doivent être complétés !";
    }
