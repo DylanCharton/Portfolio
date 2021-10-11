@@ -467,7 +467,7 @@
                         <div class="d-flex h-100 project-frame">
                             <div class="project-text w-100 my-auto text-center text-lg-right">
                                 <h4 class="projectTextLeft project-caption-t">Éval'Secours SDIS 25</h4>
-                                <p class="mb-0 projectTextLeft project-caption-sub">Un projet en cours de réalisation dans la continuité du Hacking Health de Besançon 2021</p>
+                                <p class="mb-0 projectTextLeft project-caption-sub">Un projet en cours de réalisation, dans la continuité du Hacking Health de Besançon 2021</p>
                                 <hr class="d-none d-lg-block mb-0 me-0 projectTextLeft" />
                             </div>
                         </div>
@@ -477,23 +477,12 @@
             <div class="unroll">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6 mockup">
-                        <img data-src="assets/img/techsini-pfc.png" src="assets/img/loader.png"
-                            class="img-fluid project-mockup-size lazyload" alt="Mockup Pierre feuille ciseaux">
+                        <img data-src="assets/img/carte_intervention.png" src="assets/img/loader.png"
+                            class="img-fluid project-mockup-size lazyload" alt="Carte d'intervention">
                     </div>
                     <div class="col-12 col-lg-6 project-description">
-                        <p class="py-3 px-4">Ce projet était un projet très axé sur le JavaScript. J'ai créé un
-                            Pierre-Feuille-Ciseaux-Spock-Lézard inspiré par le protagoniste d'une célèbre série. Il
-                            était demandé qu'un compteur de parties gagnées ainsi que des parties perdues soit présent
-                            et que ces données soient sauvegardées dans le navigateur de recherche selon la méthode de
-                            localStorage. Un bouton de réinitialisation offre la possibilité de remettre à zéro le
-                            compteur.<br /> J'ai réalisé les cartes à jouer avec Figma en utilisant pour base des SVG <a
-                                href="https://commons.wikimedia.org/wiki/File:Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg"
-                                target="_blank" class="inline-link" rel="noopener">disponibles en accès libre</a>. Ce
-                            fichier m'a d'ailleurs inspiré le logo du jeu. </p>
-
-                        <a href="https://dylanc903.promo-93.codeur.online/pierre-feuille-ciseaux/"
-                            class="btn btn-outline-info" target="_blank" rel="noopener">En voir
-                            plus</a>
+                        <p class="py-3 px-4">Ce projet est né durant le Hacking Health de Besançon qui s'est déroulé du 1er au 3 octobre 2021. J'ai donc mis à contribution ce que j'ai appris au service du <a href="https://www.sdis25.fr/" target="_blank" class="inline-link" rel="noopener">SDIS 25</a>. Nous avons pensé à une carte d'intervention, distribuable aux victimes et témoins et sur laquelle figure un numéro qui identifie la personne sans stocker aucune donnée sensible. <br/> Il est aussi important de mettre un sens sur ce questionnaire et de montrer à la personne prise en charge que sa contribution servira à améliorer les services du SDIS.  <br/> J'ai géré essentiellement la partie visuelle, avec la carte, et les maquettes du site web qui sont toujours en construction.</p>
+                        <div class="btn btn-secondary" target="_blank" rel="noopener">Bientôt disponible</div>
                     </div>
                 
                 </div>
