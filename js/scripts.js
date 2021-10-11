@@ -106,6 +106,15 @@ cards[5].addEventListener("click", ()=>{
         foldCross[5].innerHTML = "<i class=\"fas fa-times ms-3\"></i>"
     }
 })
+cards[6].addEventListener("click", ()=>{
+    if(unfolded[6].classList.contains("unrolled")){
+        unfolded[6].classList.remove("unrolled");
+        foldCross[6].innerHTML = "+"
+    } else {
+        unfolded[6].classList.add("unrolled");
+        foldCross[6].innerHTML = "<i class=\"fas fa-times ms-3\"></i>"
+    }
+})
 
 
 // Scroll reveal

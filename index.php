@@ -403,9 +403,10 @@
                             class="btn btn-outline-info" target="_blank" rel="noopener">En voir
                             plus</a>
                     </div>
-
+                
                 </div>
             </div>
+            <!-- Project six -->
             <div class="row gx-0 justify-content-center">
                 <div class="col-lg-6 bg-white project-img">
                     <img class="img-fluid shadow projectRevealRight lazyload"
@@ -451,12 +452,58 @@
 
                 </div>
             </div>
+            <!-- Project seven -->
+            <div class="row gx-0 justify-content-center">
+                <div class="col-lg-6 bg-white project-img">
+                    <img class="img-fluid shadow projectRevealRight lazyload"
+                        data-src="assets/img/mockup-sdis.png" src="assets/img/loader.png"
+                        alt="Eval'Secours Mockup" />
+                    <div class="overlay">
+                        <div class="know-more">+</div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project-frame">
+                        <div class="d-flex h-100 project-frame">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="projectTextLeft project-caption-t">Éval'Secours SDIS 25</h4>
+                                <p class="mb-0 projectTextLeft project-caption-sub">Un projet en cours de réalisation dans la continuité du Hacking Health de Besançon 2021</p>
+                                <hr class="d-none d-lg-block mb-0 me-0 projectTextLeft" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="unroll">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 mockup">
+                        <img data-src="assets/img/techsini-pfc.png" src="assets/img/loader.png"
+                            class="img-fluid project-mockup-size lazyload" alt="Mockup Pierre feuille ciseaux">
+                    </div>
+                    <div class="col-12 col-lg-6 project-description">
+                        <p class="py-3 px-4">Ce projet était un projet très axé sur le JavaScript. J'ai créé un
+                            Pierre-Feuille-Ciseaux-Spock-Lézard inspiré par le protagoniste d'une célèbre série. Il
+                            était demandé qu'un compteur de parties gagnées ainsi que des parties perdues soit présent
+                            et que ces données soient sauvegardées dans le navigateur de recherche selon la méthode de
+                            localStorage. Un bouton de réinitialisation offre la possibilité de remettre à zéro le
+                            compteur.<br /> J'ai réalisé les cartes à jouer avec Figma en utilisant pour base des SVG <a
+                                href="https://commons.wikimedia.org/wiki/File:Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg"
+                                target="_blank" class="inline-link" rel="noopener">disponibles en accès libre</a>. Ce
+                            fichier m'a d'ailleurs inspiré le logo du jeu. </p>
+
+                        <a href="https://dylanc903.promo-93.codeur.online/pierre-feuille-ciseaux/"
+                            class="btn btn-outline-info" target="_blank" rel="noopener">En voir
+                            plus</a>
+                    </div>
+                
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact-->
-    <section class="contact-section" id="contact">
-        <div class="text-center pb-5 contact-me">N'hésitez pas à me contacter !</div>
+    <section class="contact-section">
+        <div class="text-center pb-5 contact-me" id="contact">N'hésitez pas à me contacter !</div>
         <div class="container px-5 col-12 col-lg-6">
             <form method="POST" action="form/action.php" onsubmit="return validateRecaptcha();"
                 class="d-flex flex-column justify-content-center">
@@ -466,8 +513,9 @@
                     value="<?php if(isset($_POST['mail'])) { echo $_POST['mail']; } ?>" /><br /><br />
                 <textarea name="message" placeholder="Votre message" class="form-control"
                     style="height: 10rem;"><?php if(isset($_POST['message'])) { echo $_POST['message']; } ?></textarea><br /><br />
-                <div class="g-recaptcha" data-sitekey="6Ldg9IccAAAAANuHgqtuMCHJD1FbregBFs0Vo5Hi"></div>
-                <br />
+                <!-- <div class="g-recaptcha" data-sitekey="6Ldg9IccAAAAANuHgqtuMCHJD1FbregBFs0Vo5Hi"></div>
+                <br /> -->
+                <!-- I am going to work on the third version of recaptcha. Seems better. -->
                 <input type="submit" value="Envoyer !" class="btn btn-info m-auto" name="mailform" />
             </form>
         </div>
@@ -487,6 +535,7 @@
 
             </div>
         </div>
+        <a href="#accueil"><img src="assets/img/up.svg" alt="Flèche pour remonter" id="uparrow"></a>
 
     </section>
     <!-- Footer-->
