@@ -50,8 +50,7 @@ let unfolded = document.querySelectorAll(".unroll");
 let foldCross = document.querySelectorAll(".know-more");
 
 
-
-
+// Triggering the animation of the cards in the project section. I will change it for a foreach loop.
 cards[0].addEventListener("click", ()=>{
     if(unfolded[0].classList.contains("unrolled")){
         unfolded[0].classList.remove("unrolled");
@@ -115,16 +114,34 @@ cards[6].addEventListener("click", ()=>{
         foldCross[6].innerHTML = "<i class=\"fas fa-times ms-3\"></i>"
     }
 })
+cards[7].addEventListener("click", ()=>{
+    if(unfolded[7].classList.contains("unrolled")){
+        unfolded[7].classList.remove("unrolled");
+        foldCross[7].innerHTML = "+"
+    } else {
+        unfolded[7].classList.add("unrolled");
+        foldCross[7].innerHTML = "<i class=\"fas fa-times ms-3\"></i>"
+    }
+})
+cards[8].addEventListener("click", ()=>{
+    if(unfolded[8].classList.contains("unrolled")){
+        unfolded[8].classList.remove("unrolled");
+        foldCross[8].innerHTML = "+"
+    } else {
+        unfolded[8].classList.add("unrolled");
+        foldCross[8].innerHTML = "<i class=\"fas fa-times ms-3\"></i>"
+    }
+})
 
 
-// Scroll reveal
+// Scroll reveal library
 const sr = ScrollReveal();
    
 sr.reveal(".navReveal", {
     origin: "top",
     duration: 2000,
     distance: "100px",
-    delay: 600,
+    delay: 4700,
     
 
 });
@@ -136,12 +153,20 @@ sr.reveal(".appearLeft",{
     mobile: false
     
 });
+sr.reveal(".appearLeftMain",{
+    origin:"left",
+    duration: 1000,
+    distance: "200px",
+    delay: 4600,
+    mobile: false
+    
+});
 
 sr.reveal(".appearRightMain",{
     origin:"right",
     duration: 1000,
     distance: "100px",
-    delay: 200,
+    delay: 4500,
     mobile: false,
 });
 
@@ -164,6 +189,13 @@ sr.reveal(".appearLeftText",{
     duration: 800,
     distance: "200px",
     delay: 300,
+    mobile: false,
+});
+sr.reveal(".appearLeftTextMain",{
+    origin:"left",
+    duration: 800,
+    distance: "200px",
+    delay: 4600,
     mobile: false,
 });
 sr.reveal(".soberReveal", {
@@ -224,8 +256,32 @@ sr.reveal(".projectTextRight",{
     mobile: false
     
 });
+sr.reveal(".hello-loader",{
+    origin: "bottom",
+    duration : 2000,
+    delay : 500,
+    distance : "5px",
+    mobile: true,
+    
+});
+sr.reveal(".welcome-loader",{
+    origin: "bottom",
+    duration : 2000,
+    delay : 2500,
+    distance : "5px",
+    mobile: true,
+    
+});
+sr.reveal(".dot-loader",{
+    origin: "bottom",
+    duration : 2000,
+    delay : 2500,
+    distance : "5px",
+    mobile: true,
+    
+});
 
-// recaptcha script to prevent submission
+// recaptcha script to prevent submission if the conditions are not filled
 
 function validateRecaptcha() {
     var response = grecaptcha.getResponse();
@@ -237,6 +293,20 @@ function validateRecaptcha() {
         return true;
     }
 }
+
+// Function to make the two parts of the loader disappear after the animation
+setTimeout( function(){
+    let loaderTop = document.getElementById('loader-top');
+    let loaderBottom = document.getElementById('loader-bottom');
+    loaderTop.style = "display :none!important;";
+    loaderBottom.style = "display:none!important;";
+    console.log(loaderTop)
+}, 4900);
+
+
+
+
+
 
 
 

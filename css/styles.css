@@ -75,6 +75,95 @@ h2 {
   font-family: "bellotaregular";
   padding-top: 5rem;
 }
+p{
+  text-align: justify;
+}
+/* Loading screen */
+
+#loader-top{
+  position:absolute;
+  height: 50vh;
+  width: 100vw;
+  background-color: #fefdec;
+  z-index:1031;
+  animation: slide-up 1s linear;
+  animation-delay: 4.4s;
+  
+}
+#loader-bottom{
+  position:absolute;
+  height: 50vh;
+  width: 100vw;
+  top:50vh;
+  background-color: #fefdec;
+  z-index:1031;
+  animation: slide-down 1s linear;
+  animation-delay: 4.4s;
+}
+@keyframes slide-up{
+  0% { transform: translateY(0);}
+  30% { transform: translateY(-50vh);}
+  100% { transform: translateY(-50vh);}
+  
+}
+@keyframes slide-down{
+  0% { transform: translateY(0);}
+  30% { transform: translateY(50vh);}
+  100% { transform: translateY(50vh);}
+  
+}
+
+.hello-loader{
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float{
+  0% { transform: translate(0, 3px) ;}
+  50% { transform: translate(0, -3px) ;}
+  100% { transform: translate(0, 3px) ;}
+}
+.hello-loader, .welcome-loader{
+  font-size : 10rem;
+  font-family : "oswaldregular";
+  color: #11192D;
+
+}
+.welcome-loader{
+  font-size: 5rem;
+  
+}
+.dot-loader{
+  font-family: "oswaldregular";
+  animation: roll 3s ease-in-out infinite;
+  font-size:5rem;
+  height: 183px;
+}
+@keyframes roll{
+  0%{transform: rotateZ(1440deg) ;}
+  40%{transform: rotateZ(0deg) ;}
+  100%{transform: rotateZ(0deg) ;}
+  
+}
+.progress-bar{
+  height: 4px;
+  width: 0%;
+  background-color: #11192d;
+  animation: progress 4.5s linear;
+  position: absolute;
+  top:50vh;
+  z-index: 1032;
+}
+@keyframes progress{
+  0% {width : 0%}
+  10% {width : 5%}
+  30% {width : 10%}
+  55% {width : 30%}
+  70% {width : 40%}
+  80% {width : 50%}
+  100% {width : 75%}
+}
+
+
+
 
 /* Navigation */
 .navbar>.container,
@@ -353,7 +442,7 @@ footer {
   height: 4rem;
 }
 
-/* FINDMORE */
+/* CONTACT SECTION */
 .findmore-title {
   color: #fefdec;
   font-family: 'josefin_sansthin';
@@ -615,7 +704,7 @@ font-size: 1.0rem!important;
 }
 
 .unrolled {
-  height: calc(20rem + 50px);
+  height: calc(20rem + 100px);
 
 }
 
@@ -717,6 +806,7 @@ font-size: 1.0rem!important;
   bottom : 5rem;
   right : 1.8rem;
   opacity: 0.7;
+  z-index:99;
 }
 
 /* MEDIA QUERIES */

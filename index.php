@@ -7,7 +7,7 @@
     <meta name="description"
         content="Venez observer mes projets sur mon Portfolio. J'aspire à devenir développeur Full-Stack, alors n'hésitez pas à me contacter si mon profil vous intéresse." />
     <meta name="author" content="Dylan Charton" />
-    <title>Dylan Charton - Portfolio</title>
+    <title>Dylan Charton - Développeur Web</title>
     <!-- Recaptcha script -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
@@ -19,8 +19,12 @@
     <!-- ScrollReveal Library -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
-
 <body id="accueil">
+<div class="loader-wrapper">
+    <div id="loader-top" class="d-flex justify-content-center align-items-center"></div>
+    <div id="loader-bottom" class="d-flex justify-content-center "></div>
+    <div class="progress-bar"></div>
+</div>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top navReveal" id="mainNav">
         <div class="container px-4 px-lg-5">
@@ -45,14 +49,14 @@
 
             </div>
         </div>
-        </div>
+        
     </nav>
     <!-- Masthead-->
     <header class="masthead">
         <div class="polygon d-flex align-items-center justify-content-center">
             <img src="assets/img/photo.png" alt="Photo" id="my-photo" class="appearRightMain load-hidden">
             <div class="text-start">
-                <h1 class="mx-auto my-0 px-4 text-uppercase appearLeft load-hidden">
+                <h1 class="mx-auto my-0 px-4 text-uppercase appearLeftMain load-hidden">
                     <span class="letter">D</span>
                     <span class="letter">Y</span>
                     <span class="letter">L</span>
@@ -67,10 +71,10 @@
                     <span class="letter">O</span>
                     <span class="letter">N</span>
                 </h1>
-                <h2 class="mx-auto mt-2 mb-5 px-4 appearLeftText " id="what-i-am">Développeur Web et Web Mobile
+                <h2 class="mx-auto mt-2 mb-5 px-4 appearLeftTextMain " id="what-i-am">Développeur Web et Web Mobile
                     en formation à l'Access Code School de
                     Lons-le-Saunier</h2>
-                <p class="text-white-50 px-4 appearLeftText l" id="seeking">En recherche d'un stage du 10/01/2022
+                <p class="text-white-50 px-4 appearLeftTextMain l" id="seeking">En recherche d'un stage du 10/01/2022
                     au 04/03/2022</p>
             </div>
         </div>
@@ -218,9 +222,11 @@
                             d'intégration Web. C'est aussi avec ce projet que j'ai découvert Visual Studio Code et
                             quelques plugins parmis les plus utiles. </p>
 
+                        <div class="d-flex justify-content-center">
                         <a href="https://dylanc903.promo-93.codeur.online/mntn/" class="btn btn-outline-info"
                             target="_blank" rel="noopener">En voir
                             plus</a>
+                        </div>
                     </div>
 
                 </div>
@@ -263,10 +269,12 @@
                                 rel="noopener">ce site</a> en y intégrant directement une solution de consultation de la
                             carte et de commande. </p>
 
+                        <div class="d-flex justify-content-center">
                         <a href="https://www.figma.com/proto/MdQsIVvL7dlIf1TbsWdibr/La-Tour-de-Pize-Dylan-Charton?node-id=3%3A2&starting-point-node-id=3%3A2"
-                            class="btn btn-outline-info" target="_blank" rel="noopener">Prototype Mobile</a>
+                            class="btn btn-outline-info me-2" target="_blank" rel="noopener">Prototype Mobile</a>
                         <a href="https://www.figma.com/proto/MdQsIVvL7dlIf1TbsWdibr/La-Tour-de-Pize-Dylan-Charton?node-id=93%3A893&starting-point-node-id=93%3A893"
                             class="btn btn-outline-info" target="_blank" rel="noopener">Prototype PC</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -306,10 +314,13 @@
                             J'ai de nouveau utilisé Bootstrap pour m'aider. Ce projet a aussi été ma première approche
                             du JavaScript grâce au menu. J'ai simplement effectué le changement de couleur au clique sur
                             les boutons </p>
+                            <p class="py-3 px-4">Maquette réalisée par <a href="https://lucasm.promo-93.codeur.online/portfolio/index.html" target="_blank" rel="noopener" class="inline-link">Lucas Morille-Roy</a></p>
 
+                        <div class="d-flex justify-content-center">
                         <a href="https://dylanc903.promo-93.codeur.online/latourdepize//" class="btn btn-outline-info"
                             target="_blank" rel="noopener">En voir
                             plus</a>
+                        </div>
                     </div>
 
                 </div>
@@ -352,9 +363,11 @@
                                 class="inline-link" rel="noopener">repository</a>. La particularité de ce projet est
                             qu'il devait être réalisé sans framework CSS. </p>
 
+                        <div class="d-flex justify-content-center">
                         <a href="https://dylanc903.promo-93.codeur.online/credit-ledonien/index.php#"
                             class="btn btn-outline-info" target="_blank" rel="noopener">En voir
                             plus</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -399,11 +412,13 @@
                                 target="_blank" class="inline-link" rel="noopener">disponibles en accès libre</a>. Ce
                             fichier m'a d'ailleurs inspiré le logo du jeu. </p>
 
-                        <a href="https://dylanc903.promo-93.codeur.online/pierre-feuille-ciseaux/"
+                        <div class="d-flex justify-content-center">
+                            <a href="https://dylanc903.promo-93.codeur.online/pierre-feuille-ciseaux/"
                             class="btn btn-outline-info" target="_blank" rel="noopener">En voir
                             plus</a>
+                        </div>
                     </div>
-                
+
                 </div>
             </div>
             <!-- Project six -->
@@ -455,9 +470,8 @@
             <!-- Project seven -->
             <div class="row gx-0 justify-content-center">
                 <div class="col-lg-6 bg-white project-img">
-                    <img class="img-fluid shadow projectRevealRight lazyload"
-                        data-src="assets/img/mockup-sdis.png" src="assets/img/loader.png"
-                        alt="Eval'Secours Mockup" />
+                    <img class="img-fluid shadow projectRevealRight lazyload" data-src="assets/img/mockup-sdis.png"
+                        src="assets/img/loader.png" alt="Eval'Secours Mockup" />
                     <div class="overlay">
                         <div class="know-more">+</div>
                     </div>
@@ -467,7 +481,8 @@
                         <div class="d-flex h-100 project-frame">
                             <div class="project-text w-100 my-auto text-center text-lg-right">
                                 <h4 class="projectTextLeft project-caption-t">Éval'Secours SDIS 25</h4>
-                                <p class="mb-0 projectTextLeft project-caption-sub">Un projet en cours de réalisation, dans la continuité du Hacking Health de Besançon 2021</p>
+                                <p class="mb-0 projectTextLeft project-caption-sub">Un projet en cours de réalisation,
+                                    dans la continuité du Hacking Health de Besançon 2021</p>
                                 <hr class="d-none d-lg-block mb-0 me-0 projectTextLeft" />
                             </div>
                         </div>
@@ -478,16 +493,107 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6 mockup">
                         <img data-src="assets/img/carte_intervention.png" src="assets/img/loader.png"
-                            class="img-fluid project-mockup-size lazyload" alt="Carte d'intervention">
+                            class="img-fluid project-mockup-size lazyload mt-4" alt="Carte d'intervention">
                     </div>
                     <div class="col-12 col-lg-6 project-description">
-                        <p class="py-3 px-4">Ce projet est né durant le Hacking Health de Besançon qui s'est déroulé du 1er au 3 octobre 2021. J'ai donc mis à contribution ce que j'ai appris au service du <a href="https://www.sdis25.fr/" target="_blank" class="inline-link" rel="noopener">SDIS 25</a>. Nous avons pensé à une carte d'intervention, distribuable aux victimes et témoins et sur laquelle figure un numéro qui identifie la personne sans stocker aucune donnée sensible. <br/> Il est aussi important de mettre un sens sur ce questionnaire et de montrer à la personne prise en charge que sa contribution servira à améliorer les services du SDIS.  <br/> J'ai géré essentiellement la partie visuelle, avec la carte, et les maquettes du site web qui sont toujours en construction.</p>
-                        <div class="btn btn-secondary" target="_blank" rel="noopener">Bientôt disponible</div>
+                        <p class="py-3 px-4">Ce projet est né durant le Hacking Health de Besançon qui s'est déroulé du
+                            1er au 3 octobre 2021. J'ai donc mis à contribution ce que j'ai appris au service du <a
+                                href="https://www.sdis25.fr/" target="_blank" class="inline-link" rel="noopener">SDIS
+                                25</a>. Nous avons pensé à une carte d'intervention, distribuable aux victimes et
+                            témoins et sur laquelle figure un numéro qui identifie la personne sans stocker aucune
+                            donnée sensible. <br /> Il est aussi important de mettre un sens sur ce questionnaire et de
+                            montrer à la personne prise en charge que sa contribution servira à améliorer les services
+                            du SDIS. <br /> J'ai géré essentiellement la partie visuelle, avec la carte, et les
+                            maquettes du site web qui sont toujours en construction.</p>
+                        <div class="btn btn-secondary">Bientôt disponible</div>
                     </div>
-                
+
+                </div>
+            </div>
+            <!-- Project eight -->
+        <div class="row gx-0 justify-content-center">
+            <div class="col-lg-6 bg-white project-img">
+                <img class="img-fluid shadow projectRevealRight lazyload"
+                    data-src="assets/img/mockup-conciergerie.png" src="assets/img/loader.png"
+                    alt="Conciergerie Lédonienne Mockup" />
+                <div class="overlay">
+                    <div class="know-more">+</div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project-frame">
+                    <div class="d-flex h-100 project-frame">
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h4 class="projectTextLeft project-caption-t">CRUD de la Conciergerie Lédonienne</h4>
+                            <p class="mb-0 projectTextLeft project-caption-sub">Un projet réalisé en cours de
+                                formation.</p>
+                            <hr class="d-none d-lg-block mb-0 me-0 projectTextLeft" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="unroll">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 mockup">
+                    <img data-src="assets/img/techsini-conciergerie.png" src="assets/img/loader.png"
+                        class="img-fluid project-mockup-size lazyload" alt="Mockup Portfolio">
+                </div>
+                <div class="col-12 col-lg-6 project-description">
+                    <p class="py-3 px-4"> Ce projet tourne essentiellement autour de PHP et de la manipulation de bases de données. Plus précisément, il s'agissait ici de mettre en place un CRUD. Une administration destinée à un concierge est donc un support tout à fait pédagogique. Le grand principe était donc de réaliser des requêtes SQL (réalisées via MySQL) en utilisant le PDO (PHP Data Object) afin de permettre à un concierge de tenir à jour les interventions réalisées.</p>
+                    <p class="py-3 px-4">Dans un second temps, j'ai mis en place un système de création de compte et de connexion afin d'accéder au système d'administration.</p>
+                    <div class="d-flex justify-content-center">
+                    <a href="https://dylanc903.promo-93.codeur.online/conciergerie/"
+                            class="btn btn-outline-info" target="_blank" rel="noopener">En voir
+                            plus</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Project nine -->
+        <div class="row gx-0 justify-content-center">
+                <div class="col-lg-6 bg-white project-img">
+                    <img class="img-fluid shadow projectRevealRight lazyload" data-src="assets/img/mockup-music.png"
+                        src="assets/img/loader.png" alt="Music Band Mockup" />
+                    <div class="overlay">
+                        <div class="know-more">+</div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project-frame">
+                        <div class="d-flex h-100 project-frame">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="projectTextLeft project-caption-t">Music Band</h4>
+                                <p class="mb-0 projectTextLeft project-caption-sub">Un projet réalisé en cours de formation</p>
+                                <hr class="d-none d-lg-block mb-0 me-0 projectTextLeft" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="unroll">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 mockup">
+                        <img data-src="assets/img/techsini-music.png" src="assets/img/loader.png"
+                            class="img-fluid project-mockup-size lazyload mt-4" alt="Mockup Music Band">
+                    </div>
+                    <div class="col-12 col-lg-6 project-description">
+                        <p class="px-4">L'objectif de ce projet était d'apprendre à aller chercher des informations dans une API (Application Programming Interface) car c'est un moyen très efficace de communiquer avec des services et d'accéder à des informations laissées à disposition. Cela facilite grandement le travail de développement et donne une grande flexibilité dans la conception d'un site. Ici, il s'agissait de l'API de <a
+                                href="https://developers.deezer.com/api" target="_blank" class="inline-link" rel="noopener">Deezer</a>.</p>
+                        <p class="py-3 px-4"> Sur ce projet, j'ai d'abord effectué la structuration de la page puis l'intégration du header et du footer. Ensuite, je me suis intéressé à l'API en elle même et au fonctionnement de la requête, avec la méthode 'fetch' puis avec la création d'un objet 'XMLHttpRequest'. Enfin, c'est avec la méthode du SDK (Software Development Tool) de Deezer que nous avons communiqué avec l'API. Ce SDK me permettra par la suite d'implémenter un lecteur afin d'écouter des extraits des musiques des Top 10.   </p>
+                        <div class=" d-flex justify-content-center">
+                            <a href="https://dylanc903.promo-93.codeur.online/music-band/"
+                            class="btn btn-outline-info" target="_blank" rel="noopener">En voir
+                            plus</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        
+        
+        
     </section>
 
     <!-- Contact-->
@@ -505,6 +611,10 @@
                 <!-- <div class="g-recaptcha" data-sitekey="6Ldg9IccAAAAANuHgqtuMCHJD1FbregBFs0Vo5Hi"></div>
                 <br /> -->
                 <!-- I am going to work on the third version of recaptcha. Seems better. -->
+                <div class="d-flex align-items-center justify-content-center mb-3">
+                <input type="checkbox" name="agreement" required>
+                <span class="text-white ms-2">J'accepte que mes données soient utilisées dans l'unique but de me recontacter.</span>
+                </div>
                 <input type="submit" value="Envoyer !" class="btn btn-info m-auto" name="mailform" />
             </form>
         </div>
